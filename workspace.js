@@ -129,3 +129,16 @@ function miniMaxSum(arr) {
     //return the largest and smallest in an array
     return [small_sum,largest_sum];
 }
+
+//MAP
+function modifyArray(nums) {
+    var converted_array = nums.map(function (s) {
+        //multiply by 2 if even, otherwise by 3
+        if (s % 2 == 0) {
+            return s * 2
+        } else {
+            return s * 3
+        }
+    });
+    return converted_array;
+}
